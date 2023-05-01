@@ -1,0 +1,107 @@
+:root{
+    --bgcolor: black;
+    --bgcolor1: rgb(29, 27, 28);
+
+
+    --txtcolor: white;
+    --txtcolor1: rgb(236, 236, 236);
+
+    --btnColor: rgb(18, 86, 143);
+    --btnColor1: rgb(53, 63, 116);
+}
+
+body{
+margin: 0;
+background-color: var(--bgcolor);
+color: var(--txtcolor);
+}
+
+header{
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--bgcolor1);    
+    color: var(--txtcolor1);
+}
+header div{
+    padding: 20px;
+}
+
+#brand{
+    display: flex;
+}
+#bname{
+    position: relative;
+    left: 50px;
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+header a{
+    text-decoration: none;
+    color: var(--txtcolor1);
+}
+.Prad{
+border-radius: 8px;
+}
+.Pbut{
+    background-color: var(--btnColor);
+    color: var(--txtcolor);
+    cursor: pointer;
+
+    font-weight: bold;
+}
+.Pbut:hover{
+    background-color: var(--btnColor1);
+}
+
+#login{
+    /*debug here = return it into none*/
+    display: flex;
+
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--bgcolor1);
+
+    padding-top: .8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+
+    font-size: 20px
+}
+#logdetails{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.details{
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.loginheader{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: underline;
+
+    padding-bottom: .5em;
+}
+
+
+#enter{
+    position: relative;
+    top: 1em;
+}
+
