@@ -62,6 +62,7 @@ border-radius: 8px;
     /*debug here = return it into none*/
     display: flex;
 
+    justify-content: space-between;
     z-index: 2;
     position: absolute;
     top: 50%;
@@ -73,21 +74,24 @@ border-radius: 8px;
     padding-top: .8rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: .8rem;
 
     font-size: 20px
+
 }
 #logdetails{
     display: flex;
     flex-direction: column;
 
     align-items: center;
+    flex: 3;
 }
 
 .details{
     display: flex;
     
     justify-content: space-between;
+    padding-bottom: .8em;
 }
 
 .loginheader{
@@ -101,7 +105,31 @@ border-radius: 8px;
 
 
 #enter{
-    position: relative;
-    top: 1em;
+    padding-top: .5em;
+
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
 }
 
+#loginbtn{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.splat{
+    padding-left: .5em;
+    height: 1.5em;
+}
+#signup{
+    align-items: center;
+    text-align: center;
+
+    flex: 1;
+}
+
+.vertical-line {
+    border-left: 2px solid rgb(250, 250, 250);
+    margin-left: 1em;
+    margin-right: 1em;
+  }

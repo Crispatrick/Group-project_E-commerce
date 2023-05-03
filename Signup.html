@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>    
+    <title>Sign Up</title>
+    <script type="text/javascript" src="Signup.js"></script>
+    <link rel="stylesheet" href="Signup.css" />
+  </head>
+  <body>
+    <div class="signup-box">
+      <h1>Sign Up</h1>
+      <form>
+          <label>First Name</label>
+          <input type="text" name ="First Name" id="fname" />
+          <label>Last Name</label>
+          <input type="text" name ="Last Name" id="lname"/>
+          <label>Email</label>
+          <input type="email" name ="Email" />
+          <label>Password</label>
+          <input type="password" name="Password" />
+          <label>Confirm Password</label>
+          <input type="password" name="Confirm Password" />  
+          <label>Birthday</label>
+          <input type="date"/>
+          <label>Gender</label>
+          <select id="Gender" name="Gender"> 
+            <option value="Male">Male</option>
+            <option value="Famale">Female</option>
+            <option value="Others">Others</option>
+          </select>
+       </form>
+
+        <!-- *Notes - Apparently you cant use a onlick function or least a js if the button is inside the form tag-->
+       <input type="button" name = "Submit" value="Submit" onclick="submit(); window.open('profile.html', '_blank');"/>
+       
+      <p>
+        By clicking the Sign Up button,you agree to our <br />
+        <a href="IDK">Terms and Condition</a> and <a href="IDK">Policy Privacy</a>
+      </p>
+    </div>
+    <p class="para-2">
+      Already have an account? <a href="login.html">Login here</a>
+    </p>
+  </body>
+</html>
