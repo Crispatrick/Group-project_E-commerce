@@ -8,11 +8,15 @@
 
     --btnColor: rgb(18, 86, 143);
     --btnColor1: rgb(53, 63, 116);
+
+    --imgsize: 500px;
 }
 
 body{
 margin: 0;
-background-color: var(--bgcolor);
+
+/*background-color: var(--bgcolor); */
+background-image: linear-gradient(to right, #020403, #ae0101 , #ae0101, #ae0101, #020403 );
 color: var(--txtcolor);
 }
 
@@ -60,7 +64,7 @@ border-radius: 8px;
 
 #login{
     /*debug here = return it into none*/
-    display: flex;
+    display: none;
 
     justify-content: space-between;
     z-index: 2;
@@ -135,4 +139,83 @@ border-radius: 8px;
   }
 .hidden{
     display: none;
+}
+
+#homepage{
+    margin: 4rem;
+    display: grid;
+    
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
+    
+}
+#homepage div{
+    text-align: center;
+}
+
+
+.imgsize{
+    width: var(--imgsize);
+    height: var(--imgsize);
+}
+
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    
+    padding:40px;
+    background-color: var(--bgcolor1);
+}
+#socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slinks{
+    padding-left: 20px;
+    height: 40px;   
+}
+#infos{
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links{
+    text-decoration: none;
+    color: var(--txtcolor);
+}
+
+
+.allProducts{
+    position: relative;
+}
+
+.allP{
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    position: absolute;
+    padding: 20px;
+    
+    font-weight: bolder;
+    font-size: 55px;
+}
+
+.bSell img{
+    transition: all 0.3s ease;   
+}
+
+.bSell:hover img{
+    filter: brightness(20%);
+}
+
+.bSell:hover span{
+    z-index: 1;
+    opacity: 1;
+    color: var(--txtcolor);
 }
