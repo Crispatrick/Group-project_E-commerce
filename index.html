@@ -23,6 +23,7 @@
             <label for="search">Search</label>
             <input type="text" name="Prad" class="Prad" id="search">
             <a href="">🔎</a> 
+            
             <input type="button" value="Login" class="Prad Pbut" onclick="togglelogin()">
         </div>
     </header>
@@ -37,11 +38,11 @@
                 </div>
                 
                 <div style="padding-left: 2rem;">
-                    <input type="text" style="width: 200px;"> <br>
-                    <input type="password" style="width: 200px;"> 
+                    <input type="text" style="width: 200px;" id="email"> <br>
+                    <input type="password" style="width: 200px;" id="password"> 
                 </div>
             </div>
-            
+            <span style="position: relative; bottom: 10px; font-size: 1rem; color: rgb(255, 68, 68);" class="hidden">Wrong email or password, please try again</span>
                 <input type="button" value="Login" id="loginbtn" class="Pbut Prad" style="width: 100px; height: 30px;">
                 <span>or via social media</span>
             <div >
