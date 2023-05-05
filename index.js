@@ -8,15 +8,17 @@ let vslide;
 let vape = ["Vape/344080135_907170933728702_4303318505126835992_n.jpg", "Vape/342233616_237089915567796_5825129120004923718_n.jpg", "Vape/342229938_5976320489112075_4270483449592294278_n.jpg"];
 let currentIndex = 0;
 
+var tog;
+let logon = false;
 document.addEventListener("DOMContentLoaded", function() {
     slideshow = document.getElementById("bestSeller");
     jslide = document.getElementById("juice");
     vslide = document.getElementById("vape");
+    tog = document.getElementById("login");
+
 });
 
 function togglelogin(){
-    var tog = document.getElementById("login");
-
     if (tog.style.display == "flex") {
         tog.style.display = "none";
     } else {
@@ -24,15 +26,45 @@ function togglelogin(){
     }
 }
 
+function replacebtn(){
+    let loginbtn1 = document.getElementById("loginbtn1");
+
+    let profile = document.createElement("a");
+    profile.href = "profile.html";    
+    profile.style.position = "relative";
+    profile.style.top = "5px"
+    
+    let pfp = document.createElement('img');
+    pfp.src = "Images/pfp1.jpg";
+    pfp.style.height = "30px";
+    pfp.style.borderRadius = "50%";
+
+    profile.appendChild(pfp);
+    loginbtn1.replaceWith(profile);
+}
+
 function login(){
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
+    let hidden = document.getElementById("wrong");
+
     
+    
+    
+
     //TODO email login
     if (email == localStorage.getItem('semail') && password == localStorage.getItem('spass')) {
-        
+        //debug console.log("testing");
+        replacebtn();
+        logon = true;
+
+        tog.style.display = "none";
     } else {
-        
+        if (hidden.classList.contains("hidden")) {
+            wrong.classList.toggle("hidden");
+        } else {
+        }
+        //debug console.log("Shinji Crank That Soulja Boy");
     }
 }
 
@@ -60,3 +92,4 @@ setInterval(function() {
 
     console.log(currentIndex);
   }, 3000);
+

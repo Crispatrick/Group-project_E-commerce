@@ -25,7 +25,7 @@
             <input type="text" name="Prad" class="Prad" id="search">
             <a href="">🔎</a> 
             
-            <input type="button" value="Login" class="Prad Pbut" onclick="togglelogin()">
+            <input id="loginbtn1" type="button" value="Login" class="Prad Pbut" onclick="togglelogin()">
         </div>
     </header>
     
@@ -34,8 +34,8 @@
             <span class="loginheader">LOGIN TO YOUR ACCOUNT</span>
             <div class="details">
                 <div>
-                    <label for="">Email: </label> <br>
-                    <label for="">Password: </label>    
+                    <label for="email">Email: </label> <br>
+                    <label for="password">Password: </label>    
                 </div>
                 
                 <div style="padding-left: 2rem;">
@@ -43,8 +43,8 @@
                     <input type="password" style="width: 200px;" id="password"> 
                 </div>
             </div>
-            <span style="position: relative; bottom: 10px; font-size: 1rem; color: rgb(255, 68, 68);" class="hidden">Wrong email or password, please try again</span>
-                <input type="button" value="Login" id="loginbtn" class="Pbut Prad" style="width: 100px; height: 30px;">
+            <span id="wrong" style="position: relative; bottom: 10px; font-size: 1rem; color: rgb(255, 68, 68);" class="hidden">Wrong email or password, please try again</span>
+                <input type="button" value="Login" id="loginbtn" class="Pbut Prad" style="width: 100px; height: 30px;" onclick="login()">
                 <span>or via social media</span>
             <div >
                 <img src="Facebook_Logo_(2019).png" alt="" class="splat">
