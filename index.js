@@ -10,12 +10,12 @@ let currentIndex = 0;
 
 var tog;
 let logon = false;
+
 document.addEventListener("DOMContentLoaded", function() {
     slideshow = document.getElementById("bestSeller");
     jslide = document.getElementById("juice");
     vslide = document.getElementById("vape");
     tog = document.getElementById("login");
-
 });
 
 function togglelogin(){
@@ -47,12 +47,8 @@ function login(){
     let email = document.getElementById("email").value;
     let password = document.getElementById("password").value;
     let hidden = document.getElementById("wrong");
-
     
-    
-    
-
-    //TODO email login
+    //* Done but it wont save in different areas, TODO email login
     if (email == localStorage.getItem('semail') && password == localStorage.getItem('spass')) {
         //debug console.log("testing");
         replacebtn();

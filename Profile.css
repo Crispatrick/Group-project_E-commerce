@@ -1,0 +1,37 @@
+
+body{
+	background-color: Black;
+	color: white;
+
+}
+.Profile{
+	width: auto;
+    Display: block;
+     margin-left: 300px;
+     margin-right: 500px;    
+}
+
+.Name{
+	font-size: 50px;
+	color:White;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.Gender{
+	font-size: 50px;
+	color:White;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.Birth{
+	font-size: 50px;
+	color:White;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.Email{
+	font-size: 50px;
+	color:White;
+	margin-bottom: 20px;
+	text-align: center;
+}

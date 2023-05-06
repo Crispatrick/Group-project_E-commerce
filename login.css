@@ -7,6 +7,8 @@ body {
   width: 360px;
   height: 300px;
   margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
   border-radius: 3px;
   background-color: rgb(29, 27, 28);
 }
@@ -31,7 +33,7 @@ form input {
   border-radius: 6px;
   outline: none;
 }
-input[type="button"] {
+.logbtn {
   cursor: pointer;
   width: 318px;
   height: 35px;
@@ -41,7 +43,7 @@ input[type="button"] {
   color: white;
   font-size: 20px;
 }
-input[type="button"]:hover {
+.logbtn:hover {
   background-color: #43b195;
 }
 
@@ -59,10 +61,4 @@ p {
 }
 .para-2 a {
   color: #49c1a2;
-}
-.centerdiv{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }

@@ -3,9 +3,67 @@
   <head>    
     <title>Sign Up</title>
     <script type="text/javascript" src="Signup.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="index.js"></script>
     <link rel="stylesheet" href="Signup.css" />
   </head>
   <body>
+    <header>
+      <div id="brand">
+          <a href="index.html">
+              <!-- <img src="Smol logo.svg" alt="" height="40px" style="position: absolute; bottom: 15px;"> -->
+              <img src="341074768_1884189918647958_384037246926934607_n.jpg" alt="" height="40px" style="position: absolute; bottom: 15px; border-radius: 50%;">
+              <span id="bname"> Devil's Eye Vape Lounge</span>
+          </a>
+      </div>
+
+      <div>
+          <label for="search">Search</label>
+          <input type="text" name="Prad" class="Prad" id="search">
+          <a href="allProducts.html">🔎</a> 
+          
+          <input id="loginbtn1" type="button" value="Login" class="Prad Pbut" onclick="togglelogin()">
+      </div>
+  </header>
+  
+  <section id="centerFixed">
+      <div id="login">
+          <div id="logdetails">
+              <span class="loginheader">LOGIN TO YOUR ACCOUNT</span>
+              <div class="details">
+                  <div>
+                      <label for="email">Email: </label> <br>
+                      <label for="password">Password: </label>    
+                  </div>
+                  
+                  <div style="padding-left: 2rem;">
+                      <input type="text" style="width: 200px;" id="email"> <br>
+                      <input type="password" style="width: 200px;" id="password"> 
+                  </div>
+              </div>
+              <span id="wrong" style="position: relative; bottom: 10px; font-size: 1rem; color: rgb(255, 68, 68);" class="hidden">Wrong email or password, please try again</span>
+                  <input type="button" value="Login" id="loginbtn" class="Pbut Prad" style="width: 100px; height: 30px;" onclick="login()">
+                  <span>or via social media</span>
+              <div >
+                  <img src="Facebook_Logo_(2019).png" alt="" class="splat">
+                  <img src="Instagram_icon.png" alt="" class="splat">
+                  <img src="Pinterest-logo.png" alt="" class="splat">
+              </div>
+          </div>
+  
+          <div class="vertical-line"></div>
+  
+          <div id="signup">
+              <h2>New Here?</h2>
+              <div style="padding-bottom: 10px;">
+                  Sign up and discover our products!
+              </div>
+              <input type="button" value="Signup" class="Prad Pbut" style="height: 2em;" onclick="window.open('Signup.html', '_blank');">
+          </div>
+      </div>
+  </section>
+
+
     <div class="signup-box">
       <h1>Sign Up</h1>
       <form>
@@ -14,9 +72,9 @@
           <label>Last Name</label>
           <input type="text" name ="Last Name" id="lname"/>
           <label>Email</label>
-          <input type="email" name ="Email" id="email"/>
+          <input type="email" name ="Email" id="el"/>
           <label>Password</label>
-          <input type="password" name="Password" id="password"/>
+          <input type="password" name="Password" id="psword"/>
           <label>Confirm Password</label>
           <input type="password" name="Confirm Password" />  
           <label>Birthday</label>
@@ -30,7 +88,7 @@
        </form>
 
         <!-- *Notes - Apparently you cant use a onlick function or least a js if the button is inside the form tag-->
-       <input type="button" name = "Submit" value="Submit" onclick="submit(); window.open('profile.html', '_blank');"/>
+       <input type="button" class="btnsign" name = "Submit" value="Submit" onclick="submit(); window.open('index.html', '_blank');"/>
        
       <p>
         By clicking the Sign Up button,you agree to our <br />
@@ -40,5 +98,26 @@
     <p class="para-2">
       Already have an account? <a href="login.html">Login here</a>
     </p>
+
+    
+    <footer id="footer">
+      <div style="font-size: 20px; color: white; text-align: center;">
+          <a href="aboutus.html" class="links">About us</a> <br>
+          <a href="aboutus.html" class="links">Terms and services</a> <br>
+          <a href="aboutus.html" class="links">Privacy Policy</a> <br>
+      </div>
+
+      <div id="infos">
+          📍 Philippines <br>
+          <span>© 2023 Devil's Eye Vape Lounge - All Rights Reserved</span>
+      </div>
+
+      <div id="socials">
+          <img src="Facebook_Logo_(2019).png" alt="" class="slinks">
+          <img src="Pinterest-logo.png" alt="" class="slinks">
+          <img src="Instagram_icon.png" alt="" class="slinks">
+      </div>
+      
+  </footer>
   </body>
 </html>

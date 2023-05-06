@@ -31,7 +31,7 @@ form input {
   border-radius: 6px;
   outline: none;
 }
-input[type="button"] {
+.btnsign {
   cursor: pointer;
   width: 315px;
   height: 35px;
@@ -43,7 +43,7 @@ input[type="button"] {
 
   margin-left: 20px;
 }
-input[type="button"]:hover {
+.btnsign:hover {
   background-color: #43b195;
 }
 p {

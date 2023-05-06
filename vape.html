@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="index.js"></script>
-    <script type="module" src="loginchecker.js"></script>
+    <link rel="stylesheet" href="items.css">
+    <script type="text/javascript" src="index.js"></script>
     <title>DEVL</title>
 </head>
 <body>
@@ -22,52 +22,62 @@
         <div>
             <label for="search">Search</label>
             <input type="text" name="Prad" class="Prad" id="search">
-            <a href="">🔎</a> 
+            <a href="allProducts.html">🔎</a> 
             
             <input id="loginbtn1" type="button" value="Login" class="Prad Pbut" onclick="togglelogin()">
         </div>
     </header>
     
-    <section id="login">
-        <div id="logdetails">
-            <span class="loginheader">LOGIN TO YOUR ACCOUNT</span>
-            <div class="details">
-                <div>
-                    <label for="email">Email: </label> <br>
-                    <label for="password">Password: </label>    
+    <section id="centerFixed">
+        <div id="login">
+            <div id="logdetails">
+                <span class="loginheader">LOGIN TO YOUR ACCOUNT</span>
+                <div class="details">
+                    <div>
+                        <label for="email">Email: </label> <br>
+                        <label for="password">Password: </label>    
+                    </div>
+                    
+                    <div style="padding-left: 2rem;">
+                        <input type="text" style="width: 200px;" id="email"> <br>
+                        <input type="password" style="width: 200px;" id="password"> 
+                    </div>
                 </div>
-                
-                <div style="padding-left: 2rem;">
-                    <input type="text" style="width: 200px;" id="email"> <br>
-                    <input type="password" style="width: 200px;" id="password"> 
+                <span id="wrong" style="position: relative; bottom: 10px; font-size: 1rem; color: rgb(255, 68, 68);" class="hidden">Wrong email or password, please try again</span>
+                    <input type="button" value="Login" id="loginbtn" class="Pbut Prad" style="width: 100px; height: 30px;" onclick="login()">
+                    <span>or via social media</span>
+                <div >
+                    <img src="Facebook_Logo_(2019).png" alt="" class="splat">
+                    <img src="Instagram_icon.png" alt="" class="splat">
+                    <img src="Pinterest-logo.png" alt="" class="splat">
                 </div>
             </div>
-            <span id="wrong" style="position: relative; bottom: 10px; font-size: 1rem; color: rgb(255, 68, 68);" class="hidden">Wrong email or password, please try again</span>
-                <input type="button" value="Login" id="loginbtn" class="Pbut Prad" style="width: 100px; height: 30px;" onclick="login()">
-                <span>or via social media</span>
-            <div >
-                <img src="Facebook_Logo_(2019).png" alt="" class="splat">
-                <img src="Instagram_icon.png" alt="" class="splat">
-                <img src="Pinterest-logo.png" alt="" class="splat">
+    
+            <div class="vertical-line"></div>
+    
+            <div id="signup">
+                <h2>New Here?</h2>
+                <div style="padding-bottom: 10px;">
+                    Sign up and discover our products!
+                </div>
+                <input type="button" value="Signup" class="Prad Pbut" style="height: 2em;" onclick="window.open('Signup.html', '_blank');">
             </div>
-        </div>
-
-        <div class="vertical-line"></div>
-
-        <div id="signup">
-            <h2>New Here?</h2>
-            <div style="padding-bottom: 10px;">
-                Sign up and discover our products!
-            </div>
-            <input type="button" value="Signup" class="Prad Pbut" style="height: 2em;" onclick="window.open('Signup.html', '_blank');">
         </div>
     </section>
 
-    <section>
-        
+    <section id="products">
+        <span style="font-size: 100px; font-weight: bolder;">Vape</span>
+        <div id="items">
+            <!--TODO Dito kalang Cudal-->
+            <a href="">
+                <img src="Vape/342229938_5976320489112075_4270483449592294278_n.jpg" alt=""> <br>
+                <span>Shinji, Crank that souija boy</span>
+            </a>
+        </div>
     </section>
 
-    <footer id="footer">
+	
+	<footer id="footer">
         <div style="font-size: 20px; color: white; text-align: center;">
             <a href="" class="links">About us</a> <br>
             <a href="" class="links">Terms and services</a> <br>
