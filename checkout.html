@@ -1,0 +1,94 @@
+<!Doctype html>
+<html>
+<head>
+	<script src="checkout.js"></script>
+	<title> Checkout </title>
+<style>
+
+h1 {
+	color: white;
+	}
+
+p  {
+	color: white;
+	}
+	
+div {
+    border: 1px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 420px;
+	width: 50%;
+	height: 100%;
+    background-image: linear-gradient(to right, #020403, #ae0101 , #ae0101, #ae0101, #020403 );
+}
+
+img{
+	float: left;
+	margin-left: 50px;
+	}
+	
+label{
+	color:white;
+	font-size: 20px;
+	}
+
+
+</style>
+</head>
+
+<body style="background-color:#020403">
+
+
+<div> 
+	<h1> &nbsp Checkout </h1> 
+
+<hr>
+
+	<img src="Vpic/vape 1/Vape 1.jpg" alt = "This will show if the image is not found" border="2" height="150" widht="100" /> 
+	<p> &nbsp ITEM NAME: Classico </p>
+	<p> &nbsp VARIATION: Cheesecake </p> 
+	<p> &nbsp QUANTITY: 1</p>
+
+<br>
+<br>
+
+<hr>
+
+<center>
+
+<h1> Shipping Option </h1> 
+
+<input type="checkbox" name="Standard">
+<label> Standard  &nbsp &nbsp &nbsp &nbsp &nbsp ₱40 </label>
+<br>
+<input type="checkbox" name="International">
+<label> International &nbsp &nbsp ₱70 </label>
+
+<hr>
+
+<h1> Payment Method </h1> 
+
+<input type="checkbox" name="Standard">
+<label> GCash &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</label>
+<br>
+<input type="checkbox" name="International">
+<label> COD(Cash on Delivery) </label>
+
+<hr>
+
+<h1> Payment Details </h1> 
+<p> Item Price = ₱ &nbsp &nbsp &nbsp </p>
+<p> Shipping Price = ₱ </p>
+<p> Total = ₱ &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </p>
+
+<hr>
+
+<button id="buybtn" onclick="bought()"> <label style="color:red"> Order Now </label> </button>
+<p>  </p>
+
+</div>
+</center>
+</body>
+</html>

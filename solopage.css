@@ -1,0 +1,26 @@
+.solopagepic{
+    padding: 20px;
+    height: 400px;
+}
+.details{
+    flex-direction: column;
+    padding: 30px;
+    text-align: left;
+    background-color: rgb(41, 41, 41);
+    width: 400px;
+}
+.comments{
+    flex-direction: column;
+    margin-top: 20px;
+}
+.solopagebtn{
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: center;
+}
+.solopagebtn input{
+    font-size: 1rem;
+    font-weight: bolder;
+    height: 40px;
+    width: 100px;
+}

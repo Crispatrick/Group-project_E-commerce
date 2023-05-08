@@ -229,3 +229,12 @@ border-radius: 8px;
     background-color: var(--bgcolor1);
     
 }
+#solopage{
+    display: flex;
+    margin: 60px;
+
+    justify-content: space-evenly;
+    background-color: var(--bgcolor1);
+
+    padding: 30px;
+}
